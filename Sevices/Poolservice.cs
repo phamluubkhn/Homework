@@ -58,7 +58,7 @@ namespace Homework.Sevices
         public ApiResult PoolAppend(Pool pool)
         {
             ApiResult apiResult = new ApiResult();
-            //Allways sort PoolValues
+            //Always sort ascending PoolValues 
             try
             {
                 Pool poolCheck = PoolData.Pools.FirstOrDefault(x => x.PoolId == pool.PoolId);
